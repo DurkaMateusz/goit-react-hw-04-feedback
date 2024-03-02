@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class SectionTitle extends Component {
-  render() {
-    return <h2>{this.props.title}</h2>;
+    static propTypes = {
+        title: PropTypes.string,
+      };
+      
+    render() {
+        return <h2>{this.props.title}</h2>;
   }
 }
